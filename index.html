@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Item World</title>
+	</head>
+	<body>
+		<header><h1>Item World</h1></header>
+		<div id="input">
+			<form id="allForm">
+				See All Products:
+				<input
+					type="submit"
+					id="allLoad"
+					value="SHOW ALL Products"
+				/><br /><br /><br />
+			</form>
+			<form id="idForm">
+				Search By ID #: <input type="number" id="idNumber" min="0" /><br />
+				<input type="submit" id="idLoad" value="SEARCH" />
+			</form>
+			<br /><br />
+			<form id="inputForm">
+				Starts With:
+				<input type="text" id="startsWith" placeholder="e.g. Bea" /> <br />
+				Maximum Price: <input type="number" id="maxPrice" min="0" /> <br />
+				Items To Display:
+				<input type="number" id="pageInput" min="0" max="20" /><br />
+				<input type="submit" id="load" value="LOAD" />
+			</form>
+		</div>
+		<div id="results"></div>
+		<script src="script.js"></script>
+	</body>
+</html>
